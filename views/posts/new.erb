@@ -1,8 +1,19 @@
+<div class="container mt-5">
+
   <h1>게시판입니다.</h1>
         <hr>
         <a href="/">HOME</a>
-        <form action="/posts/create">
-            title: <input type="text" name="title">
-            content: <input type="text" name="body">
-            <input type="submit">
-        </form>
+
+<form  action="/posts/create">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Content</label>
+    <input type="text" name="body" class="form-control" id="exampleInputPassword1" placeholder="content">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
