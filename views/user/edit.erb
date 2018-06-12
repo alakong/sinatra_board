@@ -1,0 +1,23 @@
+<div class="container mt-5">
+
+  <h1>User Update Page</h1>
+        <hr>
+        <a href="/user">HOME</a>
+
+<form  action="/user/update/<%=@id%>">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input value="<%=@user.name%>" type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password</label>
+    <input value="<%=@user.password%>" type="text" name="pwd" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input value="<%=@user.email%>" type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="content">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
