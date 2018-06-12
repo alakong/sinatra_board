@@ -1,6 +1,10 @@
+
+<a href="/posts">BoardList</a>
 <p><%=@post.id%></p>
 <p><%=@post.title%></p>
 <p><%=@post.body%></p>
 <p><%=@post.created_at%></p>
-<a href="/posts">BoardList</a>
+<a href='/posts/destroy/<%=@post.id%>'>Delete</a><br>
+<a href='/posts/edit/<%=@post.id%>'>Edit</a><br>
+
 
